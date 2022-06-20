@@ -1,0 +1,146 @@
+<html>
+<head><title>Menghitung Nilai IPS</title></head>
+<body>
+    <p><script language="javascript">
+<!--
+function hitung()
+{
+    var bil1=parseFloat (document.tform.sks.value);
+    if (isNaN(bil1))
+        bil1=0.0;
+    var bil2=parseFloat (document.tform.bobot.value);
+    if (isNaN(bil2))
+        bil2=0.0;
+    var bil3=parseFloat (document.tform.mutu.value);
+    if (isNaN(bil3))
+        bil3=0.0;
+    var bil3=parseFloat (document.tform.jmlsks.value);
+    if (isNaN(bil4))
+        bil4=0.0;
+    var ip      = "";
+    var ket     = "";
+    var Nilai=((bil3/bil4))
+    if((Nilai > 3.5) && (Nilai <= 4))
+        {
+
+        ip="A";
+        ket="Selamat Anda LULUS"; 
+        }
+        else if ((Nilai > 2.9) && (Nilai<= 3.5))
+        {
+        ip="B";
+        ket="Selamat Anda LULUS";
+        }
+        else if ((Nilai > 2) && (na<=3))
+        {
+        ip="C";
+        ket="Selamat Anda LULUS";
+        }
+        else if ((na > 0) && (na<=2))
+        {
+        ip="D";
+        ket="Anda TIDAK LULUS";
+        }
+        else
+        {
+        ip="E";
+        ket="Anda TIDAK LULUS";
+        } 
+        document.tform.ipk.value=ip;
+        document.tform.ket.value=ket;
+}
+//--></script></p>
+<table border="1" align="center"width=80%">
+<FORM NAME="tform">   
+    <tr>
+        <td width="100%" colspan="2"><H2 ALIGN="center">Menghitung Nilai IPK </H2>
+        <H3 ALIGN= "center">Mahasiswa/i Universitas Catur Insan Cendekia</H3></td>
+    </tr>
+    <tr>
+    <td>
+        <PRE>
+            Nama            :<input type="text" size="11" name="nama">
+            NIM             :<input type="text" size="11" name="nim">
+            Program Studi   :<input type="text" size="11" name="program studi">
+        </PRE>
+        <table border = "1">
+
+        <tr>
+            <td width="40" align="center"><b>KODE</b></td> 
+            <td width="400" align="center"><b>MATA KULIAH</b></td> 
+            <td width="20" align="center"><b>SKS</b></td>
+            <td width="30" align="center"><b>BOBOT</b></td> 
+            <td width="30" align="center"><b>MUTU</b></td>
+        </tr>
+
+        <tr>
+            <td>UC01012002</td>
+            <td>General English</td>
+            <td>2</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="MUTU1"></td>
+        </tr>
+
+        <tr>
+            <td>SI014003</td>
+            <td>Sistem dan Teknologi Informasi</td>
+            <td>3</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="MUTU2"></td>
+        </tr>
+
+        <tr>
+            <td>SI014004</td>
+            <td>Algoritma dan Pemrograman</td>
+            <td>4</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="MUTU3"></td>
+        </tr>
+
+        <tr>
+            <td>UC01012001</td>
+            <td>Pancasila dan Kewarganegaraan</td>
+            <td>3</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="MUTU4"></td>
+        </tr>
+
+        <tr>
+            <td>SI013001</td>
+            <td>Matematika Bisnis</td>
+            <td>3</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="MUTU5"></td>
+        </tr>
+
+        <tr>
+            <td>SI013002</td>
+            <td>Manajemen dan Organisasi</td>
+            <td>3</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="MUTU6"></td>
+        </tr>
+
+        <tr>
+            <td>UC01012003</td>
+            <td>Pembangunan Karakter dan Etika Profesi</td>
+            <td>2</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="MUTU7"></td>
+        </tr>
+
+    </td>
+    </tr>
+    <tr align="center">
+        <td>
+        <input type="button" value="Hitung" onclick="hitung()">
+        <input type="reset" value="Ulang">
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="4" width="100%" align="center">Indeks Prestasi <input type="text" size="10" name="ipk"> Keterangan <input type="text" size="20" name="ket"></td>
+    </tr>
+    </FORM>
+</table>
+</BODY>
+</HTML>

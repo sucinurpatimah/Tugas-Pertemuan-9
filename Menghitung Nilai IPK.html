@@ -1,0 +1,84 @@
+<html>
+<head><title>Menghitung Nilai IPK</title></head>
+<body>
+    <p><script language="javascript">
+<!--
+function hitung()
+{
+    var bil1=parseFloat (document.tform.kehadiran.value);
+    if (isNaN(bil1))
+        bil1=0.0;
+    var bil2=parseFloat (document.tform.tugas.value);
+    if (isNaN(bil2))
+        bil2=0.0;
+    var bil3=parseFloat (document.tform.uts.value);
+    if (isNaN(bil3))
+        bil3=0.0;
+    var bil4=parseFloat (document.tform.uas.value);
+    if (isNaN(bil4))
+        bil4=0.0;
+    var ip      = "";
+    var ket     = "";
+    var Nilai=(((bil1*20)/100) + ((10*bil2)/100) + ((30*bil3)/100)+((40*bil4)/100))
+    if((Nilai > 85) && (Nilai <=100))
+        {
+
+        ip="A";
+        ket="Selamat Anda LULUS"; 
+        }
+        else if ((Nilai > 70) && (Nilai<=85))
+        {
+        ip="B";
+        ket="Selamat Anda LULUS";
+        }
+        else if ((Nilai > 55) && (na<=70))
+        {
+        ip="C";
+        ket="Selamat Anda LULUS";
+        }
+        else if ((na > 38) && (na<=55))
+        {
+        ip="D";
+        ket="Anda TIDAK LULUS";
+        }
+        else
+        {
+        ip="E";
+        ket="Anda TIDAK LULUS";
+        } 
+        document.tform.ipk.value=ip;
+        document.tform.ket.value=ket;
+}
+//--></script></p>
+<table border="1" align="center"width=70%">
+<FORM NAME="tform">   
+    <tr>
+        <td width="100%" colspan="2"><H2 ALIGN="center">Menghitung Nilai IPK </H2>
+        <H3 ALIGN= "center">Mahasiswa/i Universitas Catur Insan Cendekia</H3></td>
+    </tr>
+    <tr>
+    <td>
+        <PRE>
+            Nama            :<input type="text" size="11" name="nama">
+            NIM             :<input type="text" size="11" name="nim">
+            Program Studi   :<input type="text" size="11" name="program studi">
+            Kehadiran  (20%):<input type="text" size="11" name="kehadiran">
+            Tugas      (10%):<input type="text" size="11" name="tugas">
+            UTS        (30%):<input type="text" size="11" name="uts">
+            UAS        (40%):<input type="text" size="11" name="uas">
+        </PRE>
+    </td>
+    </tr>
+    <tr align="center">
+        <td>
+        <input type="button" value="Hitung" onclick="hitung()">
+        <input type="reset" value="Ulang">
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="4" width="50%" align="center">Indeks Prestasi <input type="text" size="10" name="ipk"> Keterangan <input type="text" size="20" name="ket"></td>
+    </tr>
+    </FORM>
+</table>
+</BODY>
+</HTML>

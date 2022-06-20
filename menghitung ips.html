@@ -1,0 +1,162 @@
+<html>
+<head><title>Menghitung Nilai IPK</title></head>
+<body>
+    <p><script language="javascript">
+<!--
+function hitung()
+{
+    var bil1=parseFloat (document.tform.kehadiran.value);
+    if (isNaN(bil1))
+        bil1=0.0;
+    var bil2=parseFloat (document.tform.tugas.value);
+    if (isNaN(bil2))
+        bil2=0.0;
+    var bil3=parseFloat (document.tform.uts.value);
+    if (isNaN(bil3))
+        bil3=0.0;
+    var bil4=parseFloat (document.tform.uas.value);
+    if (isNaN(bil4))
+        bil4=0.0;
+    var ip      = "";
+    var ket     = "";
+    var Nilai=(((bil1*20)/100) + ((10*bil2)/100) + ((30*bil3)/100)+((40*bil4)/100))
+    if((Nilai > 85) && (Nilai <=100))
+        {
+
+        ip="A";
+        ket="Selamat Anda LULUS"; 
+        }
+        else if ((Nilai > 70) && (Nilai<=85))
+        {
+        ip="B";
+        ket="Selamat Anda LULUS";
+        }
+        else if ((Nilai > 55) && (na<=70))
+        {
+        ip="C";
+        ket="Selamat Anda LULUS";
+        }
+        else if ((na > 38) && (na<=55))
+        {
+        ip="D";
+        ket="Anda TIDAK LULUS";
+        }
+        else
+        {
+        ip="E";
+        ket="Anda TIDAK LULUS";
+        } 
+        document.tform.ipk.value=ip;
+        document.tform.ket.value=ket;
+}
+//--></script></p>
+<table border="1" align="center"width=80%">
+<FORM NAME="tform">   
+    <tr>
+        <td width="100%" colspan="2"><H2 ALIGN="center">Menghitung Nilai IPK </H2>
+        <H3 ALIGN= "center">Mahasiswa/i Universitas Catur Insan Cendekia</H3></td>
+    </tr>
+    <tr>
+    <td>
+        <PRE>
+            Nama            :<input type="text" size="11" name="nama">
+            NIM             :<input type="text" size="11" name="nim">
+            Program Studi   :<input type="text" size="11" name="program studi">
+        </PRE>
+        <table border = "1">
+
+        <tr>
+            <td width="40" align="center"><b>KODE</b></td> 
+            <td width="400" align="center"><b>MATA KULIAH</b></td> 
+            <td width="20" align="center"><b>SKS</b></td>
+            <td width="30" align="center"><b>UTS</b><br>(30%)</td> 
+            <td width="30" align="center"><b>UAS</b><br>(40%)</td> 
+            <td width="30" align="center"><b>KEHADIRAN</b><br>(20%)</td>   
+            <td width="30" align="center"><b>TUGAS</b><br>(10%)</td> 
+        </tr>
+
+        <tr>
+            <td>UC01012002</td>
+            <td>General English</td>
+            <td>2</td>
+            <td><input type="text" size="15" name="UTS1"></td>
+            <td><input type="text" size="15" name="UAS1"></td>
+            <td><input type="text" size="15" name="KEHADIRAN1"></td>
+            <td><input type="text" size="15" name="TUGAS1"></td>
+        </tr>
+
+        <tr>
+            <td>SI014003</td>
+            <td>Sistem dan Teknologi Informasi</td>
+            <td>3</td>
+            <td><input type="text" size="15" name="UTS2"></td>
+            <td><input type="text" size="15" name="UAS2"></td>
+            <td><input type="text" size="15" name="KEHADIRAN2"></td>
+            <td><input type="text" size="15" name="TUGAS2"></td>
+        </tr>
+
+        <tr>
+            <td>SI014004</td>
+            <td>Algoritma dan Pemrograman</td>
+            <td>4</td>
+            <td><input type="text" size="15" name="UTS3"></td>
+            <td><input type="text" size="15" name="UAS3"></td>
+            <td><input type="text" size="15" name="KEHADIRAN3"></td>
+            <td><input type="text" size="15" name="TUGAS3"></td>
+        </tr>
+
+        <tr>
+            <td>UC01012001</td>
+            <td>Pancasila dan Kewarganegaraan</td>
+            <td>3</td>
+            <td><input type="text" size="15" name="UTS4"></td>
+            <td><input type="text" size="15" name="UAS4"></td>
+            <td><input type="text" size="15" name="KEHADIRAN4"></td>
+            <td><input type="text" size="15" name="TUGAS4"></td>
+        </tr>
+
+        <tr>
+            <td>SI013001</td>
+            <td>Matematika Bisnis</td>
+            <td>3</td>
+            <td><input type="text" size="15" name="UTS5"></td>
+            <td><input type="text" size="15" name="UAS5"></td>
+            <td><input type="text" size="15" name="KEHADIRAN5"></td>
+            <td><input type="text" size="15" name="TUGAS5"></td>
+        </tr>
+
+        <tr>
+            <td>SI013002</td>
+            <td>Manajemen dan Organisasi</td>
+            <td>3</td>
+            <td><input type="text" size="15" name="UTS6"></td>
+            <td><input type="text" size="15" name="UAS6"></td>
+            <td><input type="text" size="15" name="KEHADIRAN6"></td>
+            <td><input type="text" size="15" name="TUGAS6"></td>
+        </tr>
+
+        <tr>
+            <td>UC01012003</td>
+            <td>Pembangunan Karakter dan Etika Profesi</td>
+            <td>2</td>
+            <td><input type="text" size="15" name="UTS7"></td>
+            <td><input type="text" size="15" name="UAS7"></td>
+            <td><input type="text" size="15" name="KEHADIRAN7"></td>
+            <td><input type="text" size="15" name="TUGAS7"></td>
+        </tr>
+
+    </td>
+    </tr>
+    <tr align="center">
+        <td>
+        <input type="button" value="Hitung" onclick="hitung()">
+        <input type="reset" value="Ulang">
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="4" width="100%" align="center">Indeks Prestasi <input type="text" size="10" name="ipk"> Keterangan <input type="text" size="20" name="ket"></td>
+    </tr>
+    </FORM>
+</table>
+</BODY>
+</HTML>
